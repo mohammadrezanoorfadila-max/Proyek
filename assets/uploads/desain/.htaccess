@@ -1,0 +1,5 @@
+# Cegah file script dijalankan / diakses dari folder upload desain
+<FilesMatch "\.(php|phtml|phar|php[0-9])$">
+    Require all denied
+</FilesMatch>
+Options -Indexes
